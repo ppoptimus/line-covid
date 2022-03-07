@@ -3,7 +3,7 @@ import imgCover from '../../public/img/hi.jpg'
 
 export default function Welcome() {
   return (
-    <>
+    <div className="p-3">
       <style jsx="true">
         {`
           p {
@@ -52,6 +52,6 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
