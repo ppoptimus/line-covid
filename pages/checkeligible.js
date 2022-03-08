@@ -1,11 +1,13 @@
 import { useState } from "react"
+import { useRouter } from 'next/router'
 import Image from "next/image";
-import imgCover from '../../public/img/logo.png'
 import axios from "axios"
 import Swal from "sweetalert2"
-import endpoint from "../config/Endpoint.json"
+import imgCover from '../public/img/logo.png'
+import endpoint from "./config/Endpoint.json"
 
 export default function CheckEligible() {
+	const router = useRouter()
 	const [citizenId, setCitizenId] = useState(null)
 	const [phoneNumber, setPhoneNumber] = useState(null)
 
@@ -31,6 +33,7 @@ export default function CheckEligible() {
         }).then((result) => {
           if (result.isConfirmed) {
             console.log('redirect')
+						router.push('/')
           }
         })
       }

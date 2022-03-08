@@ -1,5 +1,5 @@
 import Image from "next/image";
-import imgCover from '../../public/img/hi.jpg'
+import imgCover from '../public/img/hi.jpg'
 
 export default function Welcome() {
   return (

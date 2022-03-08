@@ -8,5 +8,5 @@ export default function handler(req, res) {
 		phoneNumber: phone,
 	}
 
-	res.status(202).json(data)
+	res.status(200).json(data)
 }

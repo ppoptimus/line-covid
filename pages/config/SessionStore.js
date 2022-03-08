@@ -1,6 +1,6 @@
 
 export default function PersonDetail() {
-  if (typeof window !== 'undefined') {
+  if (typeof window === 'object') {
     const peosinData = window.sessionStorage.getItem("personDetail");
     if (peosinData) {
       return JSON.parse(peosinData)
